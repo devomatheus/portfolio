@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matheus Martins — Portfólio</title>
+
+<!-- Fontes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- Ícones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- Estilo próprio -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== CABEÇALHO ===================== -->
+<header id="cabecalho">
+  <div class="titulo">
+    MATHEUS MARTINS
+    <span>Mapa de Projetos — use as setas ou arraste para explorar</span>
+  </div>
+  <div id="controles-topo">
+    <div class="progresso-wrap">
+      <i class="fas fa-flag-checkered"></i>
+      <div class="progresso-barra"><div id="progresso-barra-interna"></div></div>
+      <span id="progresso-texto">0/10</span>
+    </div>
+    <button id="botao-som" class="botao-icone" title="Ativar/desativar som">
+      <i class="fas fa-volume-high"></i>
+    </button>
+  </div>
+</header>
+
+<!-- ===================== MAPA ===================== -->
+<button id="seta-esquerda" class="seta-navegacao" title="Fase anterior"><i class="fas fa-chevron-left"></i></button>
+<button id="seta-direita" class="seta-navegacao" title="Próxima fase"><i class="fas fa-chevron-right"></i></button>
+
+<main id="mapa-viewport">
+  <div id="mundo">
+    <svg id="svg-trilha"></svg>
+    <div id="personagem">
+      <div class="avatar"><i class="fas fa-user-astronaut"></i></div>
+      <div class="sombra"></div>
+    </div>
+  </div>
+</main>
+
+<!-- ===================== RODAPÉ (navegação rápida) ===================== -->
+<footer id="rodape"></footer>
+
+<!-- ===================== MODAL DE PROJETO ===================== -->
+<div id="overlay-modal">
+  <div id="cartao-fase">
+    <div class="cartao-topo">
+      <button id="botao-fechar-modal" class="botao-fechar"><i class="fas fa-xmark"></i></button>
+      <i id="modal-icone-classe" class="fas fa-code icone-grande"></i>
+      <h2 id="modal-titulo">Projeto</h2>
+      <div id="modal-subtitulo" class="subtitulo">Em breve</div>
+    </div>
+    <div class="cartao-corpo">
+      <p id="modal-descricao">Descrição em breve.</p>
+      <div id="modal-tags" class="tags-tecnologia"></div>
+      <div class="cartao-acoes">
+        <button id="modal-botao-fechar" class="botao-secundario">Fechar</button>
+        <button id="modal-botao-link" class="botao-primario" disabled>Ver projeto <i class="fas fa-arrow-up-right-from-square"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== BIBLIOTECAS (CDN) ===================== -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<!-- Script próprio -->
+<script src="script.js"></script>
+</body>
+</html>
