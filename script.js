@@ -162,8 +162,8 @@ $(function () {
 
   function atualizarProgresso() {
     var total = FASES.length;
-    var pct = Math.round((estado.visitadas.length / total) * 100);
-    $("#progresso-texto").text(estado.visitadas.length + "/" + total);
+    var pct = Math.round((estado.atual / (total - 1)) * 100);
+    $("#progresso-texto").text((estado.atual + 1) + "/" + total);
     $("#progresso-barra-interna").css("width", pct + "%");
   }
 
@@ -256,8 +256,9 @@ $(function () {
           var pontoAtual = caminhoSvg.getPointAtLength(lenAtual);
           var pontoDelta = caminhoSvg.getPointAtLength(Math.max(0, lenAtual - 2));
           var angulo = Math.atan2(pontoAtual.y - pontoDelta.y, pontoAtual.x - pontoDelta.x) * (180 / Math.PI);
+          var inclinacao = Math.max(-15, Math.min(15, angulo / 4)) * passo;
           $personagem.css({ left: pontoAtual.x, top: pontoAtual.y });
-          $personagem.find(".avatar").css({ transform: "rotate(" + Math.max(-15, Math.min(15, angulo / 4)) + "deg)" });
+          $personagem.find(".avatar").css({ transform: "scaleX(" + passo + ") rotate(" + inclinacao + "deg)" });
           centralizarCamera(pontoAtual.x);
         }
       });
