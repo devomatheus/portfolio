@@ -8,15 +8,10 @@ $(function () {
   ========================================================= */
   var FASES = [
     { x: 220,  y: 560, icone: "fa-code",          titulo: "Projeto 01" },
-    { x: 560,  y: 400, icone: "fa-mobile-screen-button", titulo: "Projeto 02" },
-    { x: 900,  y: 560, icone: "fa-database",      titulo: "Projeto 03" },
-    { x: 1240, y: 380, icone: "fa-robot",         titulo: "Projeto 04" },
-    { x: 1580, y: 540, icone: "fa-chart-line",    titulo: "Projeto 05" },
-    { x: 1920, y: 300, icone: "fa-gamepad",       titulo: "Projeto 06" },
-    { x: 2260, y: 480, icone: "fa-cloud",         titulo: "Projeto 07" },
-    { x: 2600, y: 260, icone: "fa-shield-halved", titulo: "Projeto 08" },
-    { x: 2940, y: 440, icone: "fa-palette",       titulo: "Projeto 09" },
-    { x: 3280, y: 230, icone: "fa-trophy",        titulo: "Projeto 10", final: true }
+    { x: 900,  y: 380, icone: "fa-mobile-screen-button", titulo: "Projeto 02" },
+    { x: 1580, y: 560, icone: "fa-database",      titulo: "Projeto 03" },
+    { x: 2260, y: 300, icone: "fa-robot",         titulo: "Projeto 04" },
+    { x: 2940, y: 440, icone: "fa-trophy",        titulo: "Projeto 05", final: true }
   ].map(function (fase, i) {
     fase.id = i;
     fase.subtitulo = "Em breve";
@@ -26,7 +21,7 @@ $(function () {
     return fase;
   });
 
-  var LARGURA_MUNDO = 3480;
+  var LARGURA_MUNDO = 3160;
   var ALTURA_MUNDO = 760;
   var CHAVE_PROGRESSO = "portfolio_mapa_progresso";
 
@@ -55,7 +50,7 @@ $(function () {
   function desenharDecoracao() {
     var frag = $(document.createDocumentFragment());
     // colinas
-    for (var i = 0; i < 14; i++) {
+    for (var i = 0; i < 12; i++) {
       var largura = 260 + Math.random() * 240;
       frag.append(
         $("<div>").addClass("colina").css({
@@ -66,7 +61,7 @@ $(function () {
       );
     }
     // nuvens
-    for (var j = 0; j < 10; j++) {
+    for (var j = 0; j < 9; j++) {
       frag.append(
         $("<div>").addClass("nuvem").css({
           width: "70px",
