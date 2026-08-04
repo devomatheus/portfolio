@@ -261,6 +261,7 @@ html, body {
 
 .fase.final { width: 92px; height: 92px; margin-left: -46px; margin-top: -46px; }
 .fase.final .numero { font-size: 18px; }
+.fase.final .fase-titulo { top: 100px; }
 
 /* ===== Personagem ===== */
 #personagem {
