@@ -11,35 +11,35 @@ $(function () {
       x: 220, y: 560, icone: "fa-tractor", titulo: "Agrox",
       subtitulo: "Gestão agropecuária",
       descricao: "Sistema de gestão agropecuária que centraliza, em um único painel, as informações do dia a dia de uma propriedade rural — plantio, insumos, manejo, máquinas, produção, criação e solo — hoje espalhadas em cadernos, planilhas e conversas soltas. Traz previsão do tempo, calendário integrado com todos os módulos, contatos de emergência e assistente virtual, com acesso rápido em qualquer dispositivo, inclusive no celular durante o trabalho no campo.",
-      tecnologias: ["HTML5", "CSS3", "JavaScript"],
+      tecnologias: ["Web"],
       link: "https://devomatheus.github.io/agrox-frontend/"
     },
     {
       x: 900, y: 380, icone: "fa-newspaper", titulo: "Automação DOU",
       subtitulo: "Extração do Diário Oficial da União",
       descricao: "Automação em Python que coleta, baixa e consolida diariamente as publicações da Seção 1 do Diário Oficial da União, gerando um arquivo Markdown pronto para leitura ou análise. Roda em três etapas sequenciais — consulta e salva metadados sem duplicatas, baixa o conteúdo completo de cada publicação e consolida tudo em um Markdown diário —, com controle de período que recupera automaticamente dias em que a automação não rodou.",
-      tecnologias: ["Python 3.13", "SQLite", "BeautifulSoup4", "Loguru"],
+      tecnologias: ["Automação"],
       link: "https://github.com/devomatheus/automacao-extracao-diario-oficial-uniao"
     },
     {
       x: 1580, y: 560, icone: "fa-server", titulo: "Monitoramento Droplets",
       subtitulo: "Painel de controle DigitalOcean",
       descricao: "Painel web para visualizar e controlar droplets da DigitalOcean sem precisar acessar o painel oficial ou a CLI a cada verificação de status. Lista todas as droplets da conta com nome, IP, status e indicador visual, além de permitir ligar, desligar e reiniciar diretamente pela interface. Construído em Flask com padrão de application factory e Blueprints, expõe também uma API REST própria — desacoplada da interface — que pode ser reaproveitada por scripts, dashboards ou outras integrações.",
-      tecnologias: ["Python", "Flask", "pydo", "JavaScript"],
+      tecnologias: ["Desktop"],
       link: "https://github.com/devomatheus/monitoramento-droplets-digitalocean"
     },
     {
       x: 2260, y: 300, icone: "fa-wallet", titulo: "Planejador Financeiro",
       subtitulo: "Controle de orçamento pessoal",
       descricao: "Dashboard web para controle do orçamento mensal e das despesas ao longo do ano, com os dados salvos diretamente no navegador. Permite definir um orçamento base, organizar o ano em 12 meses num acordeão, adicionar e remover despesas em cada mês e acompanhar o saldo, que se acumula automaticamente de um mês para o outro, projetando o resultado final do ano. Sem instalação, planilhas ou cadastro — basta abrir no navegador para ter uma visão clara da saúde financeira mês a mês.",
-      tecnologias: ["HTML5", "Bootstrap", "jQuery", "LocalStorage"],
+      tecnologias: ["Web"],
       link: "https://devomatheus.github.io/planejador-financeiro-pessoal/"
     },
     {
       x: 2940, y: 440, icone: "fa-key", titulo: "Gerenciador de Chaves SSH",
       subtitulo: "Visualização e cópia de chaves SSH",
       descricao: "Aplicação web para visualizar e copiar as chaves SSH armazenadas localmente no diretório ~/.ssh, eliminando a necessidade de navegar pelo terminal e usar comandos como cat para lê-las. Lista automaticamente as chaves encontradas, distingue visualmente públicas e privadas, exibe uma pré-visualização do conteúdo com o valor completo ao passar o mouse e oferece cópia para a área de transferência em um clique. Filtra arquivos irrelevantes como known_hosts, authorized_keys e config, lendo apenas os arquivos locais, sem enviar ou armazenar chaves externamente.",
-      tecnologias: ["Python 3", "Flask", "Jinja2", "JavaScript"],
+      tecnologias: ["Desktop"],
       link: "https://github.com/devomatheus/automacao-gerenciamento-chaves-ssh",
       final: true
     }
