@@ -1,7 +1,7 @@
 /* ===== Paleta padrão ===== */
 :root {
-  --laranja: #73c62b;
-  --laranja-escuro: #2c7c13;
+  --laranja: #0064b4;
+  --laranja-escuro: #0063b485;
   --cinza: #6f7072;
   --cinza-claro: #ecedec;
   --texto-escuro: #2b2b2c;
@@ -152,7 +152,7 @@ html, body {
 #mundo {
   position: relative;
   height: 100%;
-  background: linear-gradient(180deg, #ffd9ad 0%, var(--cinza-claro) 55%, #dfe0df 100%);
+  background: linear-gradient(180deg, #0064b4 0%, var(--cinza-claro) 55%, #dfe0df 100%);
 }
 
 /* Decoração: nuvens e colinas, feitas só com CSS */
